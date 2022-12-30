@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-fatura</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <div class="container">
+            <hr id="cizgi1" width="250" align="left" >      
+            <div class="ilk">
+                <p id="koyu">KOLAYSOFT TEKNOLOJİ</p>
+                <table>
+                    <tr><th>Adres:</th><td><input type="text" name="adres" style="width: 100%"></td></tr>
+                    <tr><th>İl/İlçe:</th><td><input type="text" name="ilveilçe" style="width: 100%"></td></tr>
+                    <tr><th>Tel:</th><td><input type="text" pattern="\d*" name="tel" style="width: 100%"></td></tr>
+                    <tr><th>Web Sitesi:</th><td><input type="text" name="web" style="width: 100%"></td></tr>
+                    <tr><th>E-Posta:</th><td><input type="email" name="email" style="width: 100%"></td></tr>
+                    <tr><th>Vergi Dairesi:</th><td><input type="text" name="vergidairesi" style="width: 100%"></td></tr>
+                    <tr><th>VKN:</th><td><input type="text" pattern="\d*" name="vkn" style="width: 100%"></td></tr>
+                    <tr><th>MUSTERINO:</th><td><input type="text" pattern="\d*" name="musno" style="width: 100%"></td></tr>
+                </table>
+                <hr id="cizgi2" width="250" align="left" >
+                <img src="logo.png" id="logo">
+                <img src="kolaysoft.jpg" id="logo2">
+                <p id="yazi">e-FATURA</p>
+            </div>
+            <div class="ikinci" >
+                <hr id="cizgi3" width="249" align="left" >              
+                <tr><th>SAYIN</th> <br><td><input type="text" name="ad" style="width: 100%" autofocus placeholder="Ad Soyad"></td></tr> <br> <br>           
+                <table>
+                    <tr><th>İl/İlçe:</th><td><input type="text" name="ilveilçe" style="width: 100%"></td></tr>
+                    <tr><th>Ülke:</th><td><input type="text" name="ülke" style="width: 100%"></td></tr>
+                    <tr><th>Vergi Dairesi:</th><td><input type="text" name="vergidairesi" style="width: 100%"></td></tr>
+                    <tr><th>TCKN:</th><td><input type="text" pattern="\d*" name="tc" style="width: 100%"></td></tr>                
+                </table>  
+                <hr id=cizgi4 width="249" align="left" >
+            </div>           
+            <div class="ucuncu">               
+                <p style="font-size: 12px"><b id="koyu">ETTN:</b> 4df3888b-0501-4f09-b37a-eb69c9e120c5</p> 
+            </div> 
+            <br>
+            <div  align=" right" class="dorduncu" style="width: 40%"  > 
+                <table  id="tablo" align="right">
+                    <tr><th>Özelleştirme No:</th><td><input type="text" name="özno" style="width: 100%"></td></tr>
+                    <tr><th>Senaryo:</th>
+                    <td>
+                        <form>
+                            <select name="senaryo" style="width: 100%">
+                                <option selected>Seçiniz...</option>
+                                <option>Temel Fatura</option>
+                                <option>Ticari Fatura</option>
+                                <option>Yolcu Beraber Fatura</option>
+                                <option>HKS</option>
+                                <option>Kamu</option>
+                            </select>
+                        </form>
+                    </td>
+                    </tr>
+                    <tr><th>Fatura Tipi:</th>
+                        <td>
+                            <form>
+                                <select name="senaryo" style="width: 100%">
+                                    <option selected>Seçiniz...</option>
+                                    <option>Satış</option>
+                                    <option>İade</option>
+                                    <option>Tevfikat</option>
+                                    <option>İstisna</option>
+                                    <option>Özel Matrah</option>
+                                    <option>İhraç Kayıtlı</option>
+                                    <option>SGK</option>
+                                    <option>Tevfikat İade</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><th>Fatura No:</td><th><input type="text" name="fatno" style="width: 100%"></td></tr>
+                    <tr><th>Fatura Tarihi:</th><td><input type="datetime-local" name="tarih" style="width: 100%"></td></tr>
+                </table>
+            </div>
+            <div class="besinci" >
+                <table  id="tablo2">
+                    <tr id="yan">
+                        <th>Sıra No</th>
+                        <th>Mal Hizmet</th>
+                        <th>Miktar</th>
+                        <th>Birim Fiyat</th>
+                        <th>KDV Oranı</th>
+                        <th>KDV Tutarı</th>
+                        <th>Diğer Vergiler</th>
+                        <th>Mal Hizmet Tutarı</th>
+                    </tr>
+                    <tr id="yan">
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td>
+                        <td><input type="text" style="width: 100%"></td> 
+                    </tr>
+                </table>
+            </div>
+
+            <div class="altinci" align="right" style="width: 99.7%" >
+                <table  id="tablo3">
+                    <tr><th id="hiza">Mal Hizmet Toplam Tutarı</th><td><input type="text" style="width: 100%"></td></tr>
+                    <tr><th id="hiza">Toplam İskonto</th><td><input type="text" style="width: 100%"></td></tr>
+                    <tr><th id="hiza">Hesaplanan GERÇEK USULDE KATMA DEĞER VERGİSİ(%8)</th><td><input type="text" style="width: 100%"></td></tr>
+                    <tr><th id="hiza">Vergiler Dahil Toplam Tutar</th><td><input type="text" style="width: 100%"></td></tr>
+                    <tr><th id="hiza">Ödenecek Tutar</th><td><input type="text" style="width: 100%"></td></tr>
+                </table>
+            </div>
+
+            <div class="yedinci" >
+                <table  id="tablo4" style="width: 100%">
+                    <tr><td colspan="12" style="width: 100%">Yalnız #YüzElli TL#<img src="karekod.png" id="karekod" align="right"></td></tr>
+                </table>
+                <table id="tablo5" style="width: 100%">
+                    <tr>
+                        <td colspan="3" style="width: 25%"><input type="text" name="banka" autofocus placeholder="Banka Şubesi" style= "width:100%"></td>
+                        <td colspan="9" style="width: 75%"><input type="text" name="iban" autofocus placeholder="IBAN NO" style= "width:100%"></td>
+                    </tr>      
+                </table>            
+            </div>        
+        </div>        
+    </body>
+</html>
